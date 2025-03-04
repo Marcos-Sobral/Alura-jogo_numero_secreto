@@ -1,4 +1,4 @@
-let numero = gerarNumeroAleatorio();
+let numeroSecreto = gerarNumeroAleatorio();
 console.log(numero);
 function exibirTextoNaTela(tag, texto) {
     let campo = window.document.querySelector(tag);
@@ -9,9 +9,9 @@ exibirTextoNaTela("h1","Jogo do numero secreto");
 exibirTextoNaTela("p","Escolha um numero entre 1 a 10");
 
 document.getElementsByClassName('container_botao');
-
-const verificarChute = () =>{
-    console.log("O botao foi clicado");
+function verificarChute() {
+    let chute = document.querySelector("input").value;
+    console.log(chute == numeroSecreto);
 }
 
 function reiniciarJogo() {  }
