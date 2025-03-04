@@ -1,10 +1,10 @@
-//let titulo = document.getElementById("Titulo");
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do numero secreto';
+function exibirTextoNaTela(tag, texto) {
+    let campo = window.document.querySelector(tag);
+    campo.innerHTML = texto;
+};
 
-let paragrafo =  document.querySelector('p');
-paragrafo.innerHTML = 'Escolha um numero entre 1 a 10';
-
+exibirTextoNaTela("h1","Jogo do numero secreto");
+exibirTextoNaTela("p","Escolha um numero entre 1 a 10");
 
 document.getElementsByClassName('container_botao');
 
